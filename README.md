@@ -1,4 +1,12 @@
-# Stock Price Prediction Project 📈
+# Stock Price Prediction Project 📈  
+
+[![Python](https://img.shields.io/badge/Python-3.9-blue)](https://www.python.org/)  
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.0-orange)](https://www.tensorflow.org/)  
+[![Flask](https://img.shields.io/badge/Flask-WebApp-green)](https://flask.palletsprojects.com/)  
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)  
+
+> 🚀 **Stock Price Forecasting with GRU (best model), LSTM, and ARIMA — deployed with Flask + HTML/CSS.**
+
 
 This project uses machine learning models to predict stock prices based on historical data.  
 We trained multiple models (LSTM, GRU, and ARIMA) and evaluated them using RMSE, MAE, and MAPE.  
