@@ -1,42 +1,47 @@
 # Stock Price Prediction Project 📈
 
-This project uses machine learning to predict stock prices based on historical data.
+This project uses machine learning models to predict stock prices based on historical data.  
+We trained multiple models (LSTM, GRU, and ARIMA) and evaluated them using RMSE, MAE, and MAPE.  
+✅ Based on the results, the **GRU model** achieved the best accuracy.
+
+---
 
 ## 🧠 Technologies Used
 - Python
-- Jupyter Notebook
+- Jupyter Notebook / Google Colab
 - Pandas, Numpy
 - Scikit-learn
 - Matplotlib / Seaborn
+- TensorFlow / Keras
+- Flask (for deployment)
+- HTML / CSS (for interface)
+
+---
 
 ## 📊 Dataset
 
-This project uses a historical stock dataset contained in `stock_data.csv`, which includes daily stock market data for a single publicly traded company.
-
-Each row represents one trading day, and the dataset includes the following columns:
+This project uses a historical stock dataset (`stock_data.csv`), which includes daily stock market data for Apple Inc. (AAPL).
 
 | Column Name | Description |
 |-------------|-------------|
-| **Date**      | The date of the trading session (in YYYY-MM-DD format) |
-| **Open**      | The stock's price at the market opening |
-| **High**      | The highest price reached during the trading session |
-| **Low**       | The lowest price reached during the trading session |
-| **Close**     | The stock's price at the market close |
-| **Adj Close** | The closing price adjusted for dividends and stock splits |
-| **Volume**    | The total number of shares traded on that day |
+| **Date**      | The date of the trading session (YYYY-MM-DD) |
+| **Open**      | Stock price at market opening |
+| **High**      | Highest price reached during session |
+| **Low**       | Lowest price reached during session |
+| **Close**     | Stock price at market close |
+| **Adj Close** | Closing price adjusted for dividends/splits |
+| **Volume**    | Total number of shares traded |
 
-The dataset spans a significant time range and is ideal for:
-- 📈 Time series forecasting
-- 🧠 Machine learning model training
-- 🔍 Trend and pattern detection in stock movements
+This dataset is ideal for:
+- 📈 Time series forecasting  
+- 🧠 ML model training  
+- 🔍 Trend and pattern detection  
 
-It serves as the foundation for building and evaluating predictive models aimed at forecasting future stock prices.
+---
 
 ## 🚀 How to Run
-1. Clone the repository.
-2. Install dependencies: `pip install -r requirements.txt`
-3. Run the notebook: `jupyter notebook Stock_Price_Prediction_Project.ipynb`
 
-## 📌 Results
-Summarize your results or include graphs from your notebook.
-
+### 1. Clone the Repository
+```bash
+git clone https://github.com/your-username/stock-price-prediction.git
+cd stock-price-prediction
