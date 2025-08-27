@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Stock Predictor</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🍎 Apple Stock Price Prediction</h1>
+        <form action="/" method="post">
+            <input type="date" name="start" required>
+            <input type="date" name="end" required>
+            <button type="submit">Predict</button>
+        </form>
+
+        {% if prediction %}
+            <h2>Predicted Price: {{ prediction }}</h2>
+        {% endif %}
+        {% if message %}
+            <h3 style="color:red;">{{ message }}</h3>
+        {% endif %}
+    </div>
+</body>
+</html>
